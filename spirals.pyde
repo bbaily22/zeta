@@ -6,9 +6,10 @@ class Complex():
         self.re = sigma
         self.im = t
     
-    #n^s = s.exp(n)
+    #n^s = s.expo(n)
     def expo(self, n):
         rad = math.pow(n, self.re)
+        #complex exponents are weird
         c = Complex(rad * math.cos(self.im * math.log(n)), rad * math.sin(self.im * math.log(n)))
         return c
     
@@ -34,6 +35,7 @@ def colour(x):
     return 105 + ((150*parity) + ((-1)**parity)*(x%150))
 
 def setup():
+    # This is how big my laptop screen is. I won't be offended if you change it.
     size(1440, 900)
     background(0)
     strokeWeight(3)
