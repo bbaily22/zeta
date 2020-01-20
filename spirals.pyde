@@ -55,7 +55,7 @@ def draw():
         g = colour(3*i)
         b = colour(5*i)
         stroke(r,g,b)
-        line(width/2 + (width/6 * L[i-1].re), height/2 + (width/6 * L[i-1].im), width/2 + (width/6 * L[i].re), height/2 + (width/6 * L[i].im))
+        line(width/2 + (width/6 * L[i-1].re), height/2 - (width/6 * L[i-1].im), width/2 + (width/6 * L[i].re), height/2 - (width/6 * L[i].im))
         i+=1
 
 def keyPressed():
