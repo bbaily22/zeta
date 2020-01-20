@@ -22,7 +22,7 @@ class Complex():
             L.append(L[i-1].add(s.expo(i)))
         return L
      
-C = 100000
+C = 0
 s = None
 L = None
 st = ""
